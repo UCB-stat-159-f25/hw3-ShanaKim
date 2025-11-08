@@ -1,5 +1,5 @@
 # About: 
-
+This repository contains a reproducible workflow for the LIGO Gravitational Wave Detection tutorial. It includes a Python package with tested utility functions, a Makefile for automation, and a MyST-based website to present the analysis.
 
 ## Myst link:
 
