@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=70", "numpy", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ligotools"
+authors = [
+  { name = "Ligo Scientific Collaboration (LSC)" },
+  { name = "Soohyun Kim", email = "shana22@berkeley.edu" }
+]
+description = "Tools for reading and analyzing LIGO gravitational wave data"
+readme = "README.md"
+
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "scipy",
+  "h5py",
+  "matplotlib"
+]
+
+license = "BSD-3-Clause"
+license-files = ["LICEN[CS]E*"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+keywords = ["ligo", "gravitational waves", "tools"]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/UCB-stat-159-f25/hw3-ShanaKim"
+Issues = "https://github.com/UCB-stat-159-f25/hw3-ShanaKim/issues"
+
+[tool.setuptools]
+package-dir = { "ligotools" = "." }
+packages = ["ligotools"]
+include-package-data = true
